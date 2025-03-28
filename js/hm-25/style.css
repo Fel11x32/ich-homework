@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+button {
+	cursor: pointer;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.frame {
+	width: 500px;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cards {
+	display: grid;
+	grid-auto-flow: column;
+	position: absolute;
+	transition: left 0.5s ease;
+	left: 0px
+}
+.card {
+	background-size: cover;
+	background-position: center;
+	width: 500px;
+	height: 500px;
+}
+
+.rounds {
+	position: absolute;
+	z-index: 2;
+	bottom: 60px;
+	left: 50%;
+	transform: translate(-50%);
+	display: flex;
+	gap: 15px;
+}
+.rounds button {
+	width: 20px;
+	height: 20px;
+	border: 1px solid #000;
+	background-color: #fff;
+	border-radius: 50%;
+	transition: all 0.3s ease;
+}
+.rounds button:hover {
+	border-color: red;
+	background-color: #ddd;
+}
+.rounds .active {
+	background-color: orange;
+	border-color: darkorange;
+}
+
+.trigger {
+	position: absolute;
+	z-index: 2;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.trigger button {
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	border: none;
+	border-radius: 50%;
+	transition: background-color 0.5s ease, transform 0.3s ease;
+	margin: 0 20px;
+}
+.trigger button:hover {
+	background-color: #000;
+	transform: scale(1.1);
+}
