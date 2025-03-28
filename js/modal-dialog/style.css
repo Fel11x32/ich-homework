@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.modal {
+  background-color: #38333380;
+  color: aliceblue;
+  border: 0px;
+  max-width: 350px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+ align-items: end;
+
+}
+.modal::backdrop{
+    background-color: #58545480;
+}
+.close-button{
+   
+    width: 4%;
+    cursor: pointer ;
+    border: none;
+    border-radius: 5px;
+    padding: 0 3px 0 3px
+
+}
+.agr-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    width: 100%;
+}
+
+.modal-hidden {
+    display: none;
+}
