@@ -13,6 +13,9 @@ WHERE supplier_id = 2;
 SELECT supplier_id, shipping_fee FROM purchase_orders
 WHERE created_by = 1 AND supplier_id = 5;
 
+/* Выводим заказы которые были созданы пользователем с id 1,
+и у поставщика которого id 5*/
+
 SELECT last_name, first_name FROM employees
 WHERE address = '123 2nd Avenue' OR address = '123 8th Avenue';
 
