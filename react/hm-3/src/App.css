@@ -38,3 +38,52 @@
   color: black;
   border-color: #00ffbb;
 }
+
+/*===========================================================================*/
+
+.list-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.people-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.person-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.person-item:hover {
+  background-color: #f0f0f0;
+}
+
+.remove-button {
+  padding: 6px 12px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.remove-button:hover {
+  background-color: #c82333;
+}
+
