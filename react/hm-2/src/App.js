@@ -1,7 +1,7 @@
 import React from 'react'
 import Greeting from './components/Greeting'
 import ShoppingList from './components/ShoppingList'
-import OrderStatus from './components/OrderStatus'
+import OrdersList from './components/OrdersList'
 
 const App = () => {
 	const items = ['Хлеб', 'Молоко', 'Яйца']
@@ -16,14 +16,7 @@ const App = () => {
 		<div>
 			<Greeting name='Vlad' />
 			<ShoppingList items={items} />
-
-			{orders.map(order => (
-				<OrderStatus
-					key={order.orderId}
-					orderId={order.orderId}
-					status={order.status}
-				/>
-			))}
+			<OrdersList orders={orders}/>
 		</div>
 	)
 }
