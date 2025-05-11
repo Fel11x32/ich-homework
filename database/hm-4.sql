@@ -9,7 +9,8 @@ CREATE TABLE weather (
 		night_temperature BETWEEN -30 AND 30
 	),
 	wind_speed DECIMAL(4, 1) CHECK (wind_speed >= 0)
-) -- @block
+);
+-- @block
 INSERT INTO weather (
 		date,
 		day_temperature,
