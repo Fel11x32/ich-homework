@@ -1,0 +1,51 @@
+.card {
+  max-width: 320px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #cef3a2;
+  text-align: center;
+}
+
+.avatar {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.name {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.email {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.location {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 16px;
+}
+
+.button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  background-color: #d6e9ff;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #93ffef;
+}
+
+.loading, .error {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 40px;
+}
