@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body {
+	background-color: #0C0417;
+  color: #1ED760;
+  padding: 2rem 0;
+	font-family: 'Rubik';
+
+  .container {
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
