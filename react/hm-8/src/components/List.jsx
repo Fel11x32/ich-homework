@@ -9,7 +9,7 @@ const List = () => {
 			setItems([...items, inputValue])
 			setInputValue('')
 		}
-	} 
+	}
 
 	useEffect(() => {
 		console.log('Компонент ListItems обновлен')
