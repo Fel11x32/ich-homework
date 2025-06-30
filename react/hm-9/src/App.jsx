@@ -1,8 +1,11 @@
+import DynamicForm from './components/DynamicForm'
+
 function App() {
-  return (
-    <>
-    </>
-  )
+	return (
+		<>
+			<DynamicForm />
+		</>
+	)
 }
 
 export default App
