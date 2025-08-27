@@ -9,8 +9,10 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "type": "module",
   "dependencies": {
     "node-ts": "^8.0.7",
+    "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   }
 }
