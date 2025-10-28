@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    /* ---------- Базовые настройки ---------- */
+    "target": "ES2022", // Версия JavaScript, в которую компилируется TS (современно для Node.js 18+)
+    "module": "ESNext", // Используем ESM-модули (так как в package.json указано "type": "module")
+    "moduleResolution": "node", // Разрешение модулей в стиле Node.js (поиск в node_modules и т.п.)
+    "lib": [
+      "ES2022"
+    ], // Библиотеки стандартной JS API, доступные в окружении (ES2022)
+    /* ---------- Пути и структура ---------- */
+    "rootDir": "./src", // Директория исходных файлов (.ts)
+    "outDir": "./dist", // Куда компилятор будет складывать готовый JS-код
+    "baseUrl": "./", // Базовый путь для модулей
+    "paths": {
+      "*": [
+        "./src/*"
+      ] // Удобные алиасы для импортов (например import X from "utils/...")
+    },
+    /* ---------- Поддержка совместимости ---------- */
+    "esModuleInterop": true, // Позволяет импортировать CommonJS модули (например import express from "express")
+    "allowSyntheticDefaultImports": true, // Разрешает использовать import без указания default в некоторых случаях
+    "resolveJsonModule": true, // Позволяет импортировать JSON-файлы напрямую (import config from "./config.json")
+    /* ---------- Проверка и строгий режим ---------- */
+    "strict": true, // Включает все строгие проверки типов (лучше включить всегда)
+    "forceConsistentCasingInFileNames": true, // Контроль регистра в именах файлов (важно для Linux систем)
+    "skipLibCheck": true, // Пропускает проверку типов в node_modules (ускоряет компиляцию)
+    /* ---------- Генерация и отладка ---------- */
+    "sourceMap": true, // Генерирует sourcemaps для удобной отладки в Node.js
+    "inlineSources": true, // Встраивает исходники в sourcemaps
+    "noEmitOnError": true // Не генерировать JS, если есть ошибки типов
+  },
+  /* ---------- Какие файлы учитывать ---------- */
+  "include": [
+    "src/**/*.ts"
+  ], // Какие файлы компилятор должен брать
+  "exclude": [
+    "node_modules",
+    "dist"
+  ] // Исключаем лишние папки
+}
